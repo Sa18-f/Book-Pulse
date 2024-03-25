@@ -1,0 +1,98 @@
+[
+    {
+        "bookId": 1,
+        "bookName": "1984",
+        "author": "George Orwell",
+        "image": "https://i.ibb.co/rFGfbFK/download.jpg",
+        "review": "A chilling portrayal of a dystopian society that warns of the dangers of totalitarianism.",
+        "totalPages": 328,
+        "rating": 4.5,
+        "category": "Fiction",
+        "tags": [
+            "Dystopian",
+            "Political"
+        ],
+        "publisher": "Harvill Secker",
+        "yearOfPublishing": 1949
+    },
+    {
+        "bookId": 2,
+        "bookName": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "image": "https://i.ibb.co/V3bckb8/download-1.jpg",
+        "review": "A timeless classic that addresses issues of racial injustice and moral growth.",
+        "totalPages": 336,
+        "rating": 4.8,
+        "category": "Fiction",
+        "tags": [
+            "Coming-of-age",
+            "Legal drama"
+        ],
+        "publisher": "J. B. Lippincott & Co.",
+        "yearOfPublishing": 1960
+    },
+    {
+        "bookId": 3,
+        "bookName": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "image": "https://i.ibb.co/BZ7HBcG/download-2.jpg",
+        "review": "A mesmerizing tale of love, wealth, and the American Dream.",
+        "totalPages": 180,
+        "rating": 4.2,
+        "category": "Fiction",
+        "tags": [
+            "Romance",
+            "Jazz Age"
+        ],
+        "publisher": "Charles Scribner's Sons",
+        "yearOfPublishing": 1925
+    },
+    {
+        "bookId": 4,
+        "bookName": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "image": "https://i.ibb.co/b62CYMm/download-3.jpg",
+        "review": "An iconic coming-of-age novel that captures the disillusionment of youth.",
+        "totalPages": 224,
+        "rating": 4.1,
+        "category": "Fiction",
+        "tags": [
+            "Young Adult",
+            "Existentialism"
+        ],
+        "publisher": "Little, Brown and Company",
+        "yearOfPublishing": 1951
+    },
+    {
+        "bookId": 5,
+        "bookName": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "image": "https://i.ibb.co/TMks54d/download-4.jpg",
+        "review": "A charming adventure through Middle-earth that captivates readers of all ages.",
+        "totalPages": 310,
+        "rating": 4.7,
+        "category": "Fantasy",
+        "tags": [
+            "Adventure",
+            "Quest"
+        ],
+        "publisher": "George Allen & Unwin",
+        "yearOfPublishing": 1937
+    },
+    {
+        "bookId": 6,
+        "bookName": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "image": "https://i.ibb.co/PDw83Yd/download-5.jpg",
+        "review": "A delightful comedy of manners that explores themes of love, marriage, and societal expectations.",
+        "totalPages": 432,
+        "rating": 4.6,
+        "category": "Classic",
+        "tags": [
+            "Romance",
+            "Satire"
+        ],
+        "publisher": "T. Egerton, Whitehall",
+        "yearOfPublishing": 1813
+    }
+]
