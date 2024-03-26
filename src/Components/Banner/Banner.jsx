@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
-        <div className="bg-slate-200 lg:h-[600px] rounded-xl my-12">
+        <div className="bg-slate-200 lg:h-[550px] rounded-xl my-12">
             <div className="flex justify-around items-center lg:py-20 py-12">
                 <div>
                     <h1 className="lg:text-7xl text-4xl font-bold">Books to freshen <br /> up your bookshelf</h1>
