@@ -1,4 +1,5 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBook } from "../../Utility";
 
 
 const BookDetails = () => {
@@ -6,7 +7,10 @@ const BookDetails = () => {
     const { bookId } = useParams();
     const bookIdInt = parseInt(bookId);
     const book = books.find(book => book.bookId === bookIdInt);
-    console.log(book);
+    // console.log(book);
+    const handleRead = (book) =>{
+        saveBook(book);
+    }
     return (
         <div className="flex lg:flex-row  flex-col justify-between bg-base-100 shadow-xl rounded-xl lg:my-12 lg:mx-5 mx-2">
             <div className="rounded-xl lg:w-[400px] bg-slate-100 mt-4">
@@ -30,8 +34,8 @@ const BookDetails = () => {
                 <p className="my-3">Year of Publishing : <span className="ml-2 font-sans font-semibold">{book.yearOfPublishing}</span> </p>
                 <p className="my-3">Rating : <span className="ml-2 font-sans font-semibold">{book.rating}</span> </p>
                 <div className="lg:gap-3 mb-1">
-                    <a className="btn text-black border-green-300 px-7">Read</a>
-                    <a className="btn bg-blue-400 text-white ml-4">WishList</a>
+                    <button onClick={() => {handleRead(book)}} className="btn text-black border-green-300 px-7">Read</button>
+                    <button onClick={() => {handleRead(book)}} className="btn bg-blue-400 text-white ml-4">WishList</button>
                 </div>
             </div>
         </div>
