@@ -3,6 +3,7 @@ import { getBooks, saveBook } from "../../Utility";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from "react-toastify";
+import { saveWishList } from "../../Utility/localStorage";
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -22,11 +23,9 @@ const BookDetails = () => {
         }
     }
     const handleWishList = (book) => {
-        const storedBooks = getBooks();
-        const isExist = storedBooks.find(b => b.bookId === book.bookId);
-        if (!isExist) {
-            saveBook(book);
-            toast.success("Added to Wishlist");
+        const added = saveWishList(book);
+        if (added) {
+            toast.success("Added to Wishlist successfully");
         } 
         else {
             toast.error("This book is already added in Wishlist");
