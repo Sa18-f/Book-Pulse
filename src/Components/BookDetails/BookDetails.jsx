@@ -21,14 +21,43 @@ const BookDetails = () => {
         else {
             toast.error("You have already read this books");
         }
+        // const storedWishList = getWishList();
+        // const isWishListed = storedWishList.find(b => b.bookId === book.bookId);
+        // if (isWishListed) {
+        //     toast.error("You have already added this book to your wishlist.");
+        // } else {
+        //     const storedBooks = getBooks();
+        //     const isExist = storedBooks.find(b => b.bookId === book.bookId);
+        //     if (!isExist) {
+        //         saveBook(book);
+        //         toast.success("Added to Read list");
+        //     }
+        //     else {
+        //         toast.error("You have already read this book");
+        //     }
+        // }
     }
     const handleWishList = (book) => {
-        const added = saveWishList(book);
-        if (added) {
-            toast.success("Added to Wishlist successfully");
+        // const added = saveWishList(book);
+        // if (added) {
+        //     toast.success("Added to Wishlist successfully");
+        // } 
+        // else {
+        //     toast.error("This book is already added in Wishlist");
+        // }
+        const storedBooks = getBooks();
+        const isExist = storedBooks.find(b => b.bookId === book.bookId);
+        if (isExist) {
+            toast.error("You have already read this book");
         } 
         else {
-            toast.error("This book is already added in Wishlist");
+            const added = saveWishList(book);
+            if (added) {
+                toast.success("Added to Wishlist successfully");
+            } 
+            else {
+                toast.error("This book is already added in Wishlist");
+            }
         }
     }
     return (
