@@ -1,16 +1,14 @@
 import { useState } from "react";
-// import { Link, Outlet } from "react-router-dom";
 import { getBooks } from "../../Utility";
 import { getWishList } from "../../Utility/localStorage";
-import SingleBook from "../SingleBook/SingleBook";
 import { Link } from "react-router-dom";
-
+import ReadBook from "../ReadBook/ReadBook";
+import WishListBooks from "../WishListBooks/WishListBooks";
 
 const ListedBooks = () => {
     const [tabIndex, setTabIndex] = useState(0);
     const readBooks = getBooks();
     const wishListBooks = getWishList();
-    
 
     return (
         <div>
@@ -33,11 +31,11 @@ const ListedBooks = () => {
                     <Link to={`wishList`} onClick={() => setTabIndex(1)} className={`tab ${tabIndex === 1 ? 'tab-active' : ''}`}>Wishlist Books</Link>
                 </div>
             </div>
-            <div className="grid lg:grid-cols-3 gap-10 my-10">
+            <div className="my-10">
                 {tabIndex === 0 ? (
-                    readBooks.map(book => <SingleBook key={book.bookId} book={book}></SingleBook>)
+                    <ReadBook books={readBooks} />
                 ) : (
-                    wishListBooks.map(book => <SingleBook key={book.bookId} book={book}></SingleBook>)
+                    <WishListBooks books={wishListBooks} />
                 )}
             </div>
         </div>
