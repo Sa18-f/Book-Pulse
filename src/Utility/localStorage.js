@@ -17,3 +17,8 @@ export const saveWishList = book =>{
     }
     return false;
 }
+export const removeBookFromWishList = (bookId) => {
+    let wishList = getWishList();
+    const updatedWishList = wishList.filter(book => book.bookId !== bookId);
+    localStorage.setItem('wishList', JSON.stringify(updatedWishList));
+}

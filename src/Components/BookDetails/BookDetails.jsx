@@ -3,7 +3,7 @@ import { getBooks, saveBook } from "../../Utility";
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from "react-toastify";
-import { saveWishList } from "../../Utility/localStorage";
+import { removeBookFromWishList, saveWishList } from "../../Utility/localStorage";
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -21,6 +21,7 @@ const BookDetails = () => {
         else {
             toast.error("You have already read this books");
         }
+        removeBookFromWishList(book.bookId);
         // const storedWishList = getWishList();
         // const isWishListed = storedWishList.find(b => b.bookId === book.bookId);
         // if (isWishListed) {

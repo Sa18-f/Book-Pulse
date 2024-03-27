@@ -42,7 +42,7 @@ const WishListBooks = ({ books }) => {
     );
 };
 WishListBooks.propTypes = {
-    books: PropTypes.object.isRequired
+    books: PropTypes.object
 }
 
 export default WishListBooks;
