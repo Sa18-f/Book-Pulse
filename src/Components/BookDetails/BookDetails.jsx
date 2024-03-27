@@ -67,12 +67,12 @@ const BookDetails = () => {
                     <img className="rounded-xl lg:w-56 lg:h-[300px] mx-auto" src={book.image} alt="Album" />
                 </div>
             </div>
-            <div className="lg:w-[700px] px-3">
+            <div className="lg:w-[700px] px-3 mt-3">
                 <h2 className="font-bold text-xl">{book.bookName}</h2>
                 <p className="font-semibold">By : {book.author}</p>
                 <p className="border-y py-3 border-slate-300 my-2 font-semibold">{book.category}</p>
                 <p><span className="font-bold">Review :</span> {book.review}</p>
-                <div className='flex gap-3 border-b border-slate-300 mt-1 py-5'>
+                <div className='flex gap-3 border-b border-slate-300 py-5'>
                     <span className="font-bold">Tag :</span>
                     {book.tags.map((tag, index) => (
                         <p key={index} className="bg-slate-100 border text-[#23BE0A] rounded-xl px-3 py-1">{tag}</p>
