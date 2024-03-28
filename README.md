@@ -1,7 +1,7 @@
 # BookPulse
 
 
-[Live Site](http://localhost:5173/.com)
+[Live Site][http://localhost:5173/.com]
 
 ## Features and Characteristics
 

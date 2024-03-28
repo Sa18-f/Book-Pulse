@@ -30,7 +30,7 @@ const ReadBook = ({ books }) => {
                             <p className='flex gap-3 items-center'><GoPeople /> Publisher : <span className="font-sans font-semibold">{book.publisher}</span> </p>
                             <p className='flex gap-3 items-center'><MdOutlineContactPage /> Page : <span className="font-sans font-semibold">{book.totalPages}</span> </p>
                         </div>
-                        <div className='flex gap-3 border-t border-slate-300 mt-1 py-5'>
+                        <div className='flex gap-3  mt-1 py-5'>
                             <p className="bg-slate-100 border text-[#006eff] rounded-xl px-3 py-1 font-semibold">Category :{book.category} </p>
                             <p className="bg-slate-100 border text-[#006eff] rounded-xl px-3 py-1 font-semibold">Rating : <span className='font-sans font-semibold'>{book.rating}</span> </p>
                             <Link to={`/book/${book.bookId}`}><button className="bg-green-400 border text-white rounded-xl px-3 py-1 font-semibold">View Details </button></Link>

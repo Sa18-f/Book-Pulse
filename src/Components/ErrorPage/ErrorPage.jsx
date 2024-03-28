@@ -4,8 +4,7 @@ import { Link, useRouteError } from "react-router-dom";
 const ErrorPage = () => {
     const error = useRouteError();
     return (
-        <div className="max-w-[1170px]">
-            <div className="lg:ml-[700px] text-center my-96">
+            <div className="flex justify-center items-center text-center flex-col min-h-screen">
                 <h2 className="text-xl">{error.statusText || error.message}</h2>
                 {
                     error.status === 404 && <div>
@@ -14,7 +13,6 @@ const ErrorPage = () => {
                     </div>
                 }
             </div>
-        </div>
     );
 };
 
