@@ -1,7 +1,7 @@
 # BookPulse
 
 
-[Live Site][http://localhost:5173/.com]
+[Live Site](https://dashing-kashata-2f3afe.netlify.app/)
 
 ## Features and Characteristics
 

@@ -19,7 +19,7 @@ const Header = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="flex justify-center items-center lg:text-xl font-bold text-md"><img className="lg:w-10 w-8 h-12"  src="/src/assets/images/istockphoto-1197901679-612x612.jpg" alt="" /> BookPulse</a>
+                <a className="flex justify-center items-center lg:text-xl font-bold text-md"><img className="lg:w-10 w-8 h-12"  src="https://i.ibb.co/w0jg63W/istockphoto-1197901679-612x612.jpg" alt="" /> BookPulse</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

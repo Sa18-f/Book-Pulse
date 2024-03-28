@@ -10,7 +10,7 @@ const Banner = () => {
                     <Link to="/listedBooks"><button className="btn bg-green-500 text-white lg:mt-16 mt-10 px-7 text-lg">View The List</button></Link>
                 </div>
                 <div className="">
-                    <img src="/src/assets/images/pngwing 1.png" alt="" />
+                    <img src="https://i.ibb.co/TM324C8/pngwing-1.png" alt="" />
                 </div>
             </div>
         </div>
