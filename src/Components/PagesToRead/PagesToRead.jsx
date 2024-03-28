@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { BarChart, Bar, XAxis, YAxis, Tooltip, CartesianGrid, Cell } from 'recharts';
+import { BarChart, Bar, XAxis, YAxis, ResponsiveContainer, Tooltip, CartesianGrid, Cell } from 'recharts';
 import { getBooks } from '../../Utility';
 const getPath = (x, y, width, height) => (
     `M${x},${y + height}
@@ -38,8 +38,9 @@ const PagesToRead = () => {
         <div className="my-12">
             <div>
                 <div className="mb-8">
+                <ResponsiveContainer width="100%" height={500}>
                     <BarChart
-                        width={800}
+                        width={1050}
                         height={500}
                         data={chartData}
                         margin={{
@@ -64,6 +65,7 @@ const PagesToRead = () => {
                             ))}
                         </Bar>
                     </BarChart>
+                    </ResponsiveContainer>
                 </div>
             </div>
         </div>
