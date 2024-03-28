@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const ReadBook = ({ books }) => {
     return (
-        <div className='grid grid-cols-1 gap-6'>
+        <div className='flex flex-col gap-6 max-w-[1170px]'>
             {books.map(book => (
                 <div key={book.bookId} className="flex lg:flex-row  flex-col justify-between bg-base-100 shadow-xl rounded-xl gap-4">
                     <div className="rounded-xl lg:w-[300px] bg-slate-100">
@@ -17,7 +17,7 @@ const ReadBook = ({ books }) => {
                         <h2 className="font-bold text-xl">{book.bookName}</h2>
                         <p className="font-semibold my-3">By : {book.author}</p>
                         <div className='flex gap-10 items-center'>
-                            <div className='flex gap-3 py-3'>
+                            <div className='flex gap-3 lg:flex-row flex-col py-3'>
                                 <span className="font-bold">Tag :</span>
                                 {book.tags.map((tag, index) => (
                                     <p key={index} className="bg-slate-100 border text-[#23BE0A] rounded-xl px-3 py-1">{tag}</p>

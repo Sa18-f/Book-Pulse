@@ -34,7 +34,7 @@ const ListedBooks = () => {
                     </ul>
                 </details>
             </div>
-            <div className="w-[400px]">
+            <div className="lg:w-[400px]">
                 <div role="tablist" className="tabs tabs-lifted">
                     <Link to='' onClick={() => setTabIndex(0)} className={`tab ${tabIndex === 0 ? 'tab-active' : ''}`}> <span className="font-bold text-[16px]">Read Books</span> </Link>
                     <Link to={`wishList`} onClick={() => setTabIndex(1)} className={`tab ${tabIndex === 1 ? 'tab-active' : ''}`}><span className="font-bold text-[16px]">Wishlist Books</span></Link>

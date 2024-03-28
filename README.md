@@ -1,8 +1,20 @@
-<h1>BookPulse</h1>
+# BookPulse
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+[Live Site](http://localhost:5173/.com)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features and Characteristics
+
+- **Browse and Organize Books**: Easily browse through a collection of books and organize them into different categories.
+  
+- **Detailed Book Information**: View detailed information about each book, including author, publisher, tags, and more.
+
+- **Sorting Functionality**: Sort books based on various criteria such as rating, number of pages, and publishing year.
+  
+- **Read Books Management**: Keep track of books you read by adding them to your wishlist.
+
+- **Wishlist Management**: Keep track of books you wish to read by adding them to your wishlist.
+  
+- **Responsive Design**: The website is optimized for various devices, ensuring a seamless experience across desktops and smartphones.
+  
+
